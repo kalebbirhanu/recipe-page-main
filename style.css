@@ -27,7 +27,7 @@ p {
 }
 
 .header>h1 {
-  font-size: 50px;
+  
   color: black;
 }
 
@@ -97,14 +97,17 @@ hr {
 
 
 @media only screen and (min-width: 768px) {
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
   body {
     background-color: rgb(250, 239, 222);
   }
 
   .total {
     background-color: white;
-    margin: 100px 300px;
+    margin: 150px 300px;
     border-radius: 20px;
   }
 
@@ -113,12 +116,13 @@ hr {
     border-radius: 50px;
   }
 
-  .header {
+  .header, .main, .ingredient, .instruction, .nutrition {
     margin-top: 0;
   }
 
   div > p {
     font-size: 16px;
+    margin: 0;
   }
 
 .instruction>ul>li {
